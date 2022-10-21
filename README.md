@@ -1,2 +1,2 @@
 # Sample-Scripts
-This repository is for providing sample scripts to preform certain tasks within the SOAR Product itself.
+ Sample Scripts designed for IBM SOAR in-product scripting engine developed by The IR Gurus. These samples are meant to be a guide as to how to perform unique actions within the platform.
