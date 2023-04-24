@@ -13,7 +13,7 @@
 
 Principal is a class within SOAR that will allow you to pull information from the user that kicked off an automation. This information includes the type of user, the user's name, and finally the users email address for identifying the account.
 
-For official documentation on the principal operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/46?topic=scripts-principal-operations](https://www.ibm.com/docs/en/sqsp/46?topic=scripts-principal-operations)
+For official documentation on the principal operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/48?topic=scripts-principal-operations](https://www.ibm.com/docs/en/sqsp/46?topic=scripts-principal-operations)
 
 ### Type of User
 
@@ -67,7 +67,7 @@ Thanks!
 
 Groups is a class within SOAR meant to give scripts the ability to tell if a user is in a specific group. Ultimately when the lookup is true, it give responds with the principal of the group specified.
 
-For official documentation on the groups operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/46?topic=scripts-groups-operations](https://www.ibm.com/docs/en/sqsp/46?topic=scripts-groups-operations)
+For official documentation on the groups operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/48?topic=scripts-groups-operations](https://www.ibm.com/docs/en/sqsp/48?topic=scripts-groups-operations)
 
 ### User Group Lookups
 
