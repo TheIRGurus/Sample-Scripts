@@ -5,5 +5,5 @@
 
 Operators are different ways that data is stored or parsed within the IBM Security SOAR platform. Each of the articles below will provide further explanation and examples of how to use different operations within the system.
 
-  - [Current User Analysis](/Current%20User%20Analysis/README.md)
-  - [Email Parsing](/Email%20Parsing/README.md)
+  - [Current User Analysis](/Current%20User%20Analysis/)
+  - [Email Parsing](/Email%20Parsing/)
