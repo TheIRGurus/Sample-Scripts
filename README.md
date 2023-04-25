@@ -7,3 +7,5 @@ Operators are different ways that data is stored or parsed within the IBM Securi
 
   - [Current User Analysis](/Current%20User%20Analysis/)
   - [Email Parsing](/Email%20Parsing/)
+  - [Querying Incident Data](/Querying%20Incident%20Data/)
+  - [Script Testing and Logging](/Script%20Testing%20and%20Logging/)

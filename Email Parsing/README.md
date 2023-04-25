@@ -204,39 +204,9 @@ While this first method can be quite complicated when performing searches across
 
 As stated before this can get very complicated as we build out a incident search query to find our perfect incident, but to make this a little more simple I will discuss how I have handled this in the past with messages that left the system and got a response back. When I would send an email out, I appended the Incident ID to the end of the subject. This would allow me to easily parse that ID out and associate the correct incident quickly. The format for that would be `"Some kind of subject" + (ID: 1234)`. I would then just look for the ID by doing a regex and build the association. The script below shows how to do that as we have to first parse the ID out, then build the query, then run the query, and finally pass the results the the associateWithIncident operation.
 
-The way the query is built is using the `query_builder` operations. First you build the filter by building using 1 or more comparators. The available comparators are below:
+To perform the search to associate the email with an incident follow the instructions on the [Querying Incident Data](../Querying%20Incident%20Data/) page.
 
->contains
->
->equals
->
->hasNoValue
->
->hasValue
->
->isGreaterThan
->
->isGreaterThanOrEquals
->
->isLessThan
->
->isLessThanOrEquals
->
->notContains
->
->notEquals
-
-Once you have filter built, you will build the query by using the `build` function within the operation.
-
-For official documentation on the Query Builder operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/48?topic=scripts-query-builder-operations](https://www.ibm.com/docs/en/sqsp/48?topic=scripts-query-builder-operations)
-
-The last step in finding an incident is by using the finalized query to perform a search using the `helper` operation and `findIncidents()` function.
-
->helper.findIncidents(query)
-
-For official documentation on the Query Builder operator, check out the KB article found here: [https://www.ibm.com/docs/en/sqsp/48?topic=scripts-helper-operations](https://www.ibm.com/docs/en/sqsp/48?topic=scripts-helper-operations)
-
-The results of that search will be the incidents list that meets the filter you created. You will then choose one of the incidents to pass to the `associateWithIncident()` function. The sample script below puts all of this together.
+You will then choose one of the resulting incidents to pass to the `associateWithIncident()` function. The sample script below puts all of this together.
 
 ```py
 import re
